@@ -13,7 +13,7 @@ const headerOptions = {
   providedIn: 'root'
 })
 export class TodoService {
-
+ 
   todoURI: string = 'https://jsonplaceholder.typicode.com/todos';
   todo_limit:string = '?_limit=5';
 
@@ -33,4 +33,9 @@ export class TodoService {
   deleteToDo(todo: TODO):Observable<any> {
     return this.http.delete(`${this.todoURI}/${todo.id}`);
   }
+
+  addTodo(todo: TODO):Observable<any> {
+    return this.http.post(this.todoURI, todo, headerOptions);
+  }
+
 }

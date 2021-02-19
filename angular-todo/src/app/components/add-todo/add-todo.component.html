@@ -1,4 +1,5 @@
 <form class="form">
-  <input type="text" name="tite" [(ngModel)] = "title" placeholder="Add Todo....">
-  <input type="submit" value="Submit" class="btn">
+  <input type="text" name="title" [(ngModel)] = "title" placeholder="Add Todo....">
+  <!-- {{ test }} -->
+  <input type="submit" (click)="addTodo()" value="Submit" class="btn">
 </form>

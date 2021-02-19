@@ -1,8 +1,8 @@
-<app-add-todo></app-add-todo>
+<app-add-todo (addToDo) = addTodo($event) [name] = "name"></app-add-todo>
 <app-todo-item 
     *ngFor="let todo of todos" 
     [todo] = "todo"
-    (deleteToDo) = deleteToDo($event)> 
+    (deleteTodo) = deleteTodo($event)>
     <!-- [todo] = "todo" - property binding value from parent to child hrere todosComponent to todo-item.component there 
                             we will receive with @Input() todo:TODO--> 
     <!-- (deleteToDo) = deleteToDo($event)> -> event binding -->
