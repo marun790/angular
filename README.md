@@ -5,13 +5,13 @@ in angular we have architecture like modules and components
 group of components are called as mogules -  basically the logical grouping of components are modules
 
 Binding	Example
-Property Binding	<input [placeholder]="placeholderValue" />
-String Interpolation	<input placeholder="{{placeholderValue}}" />
-Attribute Binding	<td [attr.colspan]="clspn">
-Style Binding	<input [style.borderStyle]="'dashed'" />
-Class Binding	<input [class.active]="true" />
-Event Binding	<input (keyup.enter)="onEnter()" />
-Two-way Binding	<input [(ngModel)]="value" />
+Property Binding-<input [placeholder]="placeholderValue" />
+String Interpolation-<input placeholder="{{placeholderValue}}" />
+Attribute Binding-<td [attr.colspan]="clspn">
+Style Binding-<input [style.borderStyle]="'dashed'" />
+Class Binding-<input [class.active]="true" />
+Event Binding-input (keyup.enter)="onEnter()" />
+Two-way Binding-nput [(ngModel)]="value" />
 
 ```
 <app-todo-item 
