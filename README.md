@@ -6,7 +6,7 @@ group of components are called as mogules -  basically the logical grouping of c
 
 Binding	Example
 * Property Binding -	<input [placeholder]="placeholderValue" /> 
-* String Interpolation -	<input placeholder="{{placeholderValue}}" /> 
+* String Interpolation - <input placeholder="{{placeholderValue}}"
 * Attribute Binding	- <td [attr.colspan]="clspn"> 
 * Style Binding	 - <input [style.borderStyle]="'dashed'" />
 * Class Binding	- <input [class.active]="true" />
