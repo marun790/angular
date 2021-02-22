@@ -13,6 +13,7 @@ Class Binding	| <input [class.active]="true" />
 Event Binding |	<input (keyup.enter)="onEnter()" />
 Two-way Binding	| <input [(ngModel)]="value" />
 
+
 ```
 <app-todo-item 
     *ngFor="let todo of todos" 
