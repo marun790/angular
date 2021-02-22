@@ -3,11 +3,16 @@ Angular demo
 key terms in angular
 in angular we have architecture like modules and components
 group of components are called as mogules -  basically the logical grouping of components are modules
-{{ <VARIABLE_NAME> }} -> String intropulation
-(<EVENT : click>)="<METHID_NAME(ARG..)>" -> event binding 
-[<PROPERTY_NAME>] - property binding -> passing value from component to component will use @Input to receive the value
-[(<Name>)] - model binding like text box changing value will reflect on property in ts
-todos.component.html
+
+Binding	Example
+Property Binding	<input [placeholder]="placeholderValue" />
+String Interpolation	<input placeholder="{{placeholderValue}}" />
+Attribute Binding	<td [attr.colspan]="clspn">
+Style Binding	<input [style.borderStyle]="'dashed'" />
+Class Binding	<input [class.active]="true" />
+Event Binding	<input (keyup.enter)="onEnter()" />
+Two-way Binding	<input [(ngModel)]="value" />
+
 ```
 <app-todo-item 
     *ngFor="let todo of todos" 
@@ -17,6 +22,7 @@ todos.component.html
 
 ###Commands 
 install node
+>npm install -g @angular/cli
 >npm --version
 >npm install -g @angular/cli
 >ng --version
@@ -370,4 +376,3 @@ deleteToDo(todo: TODO) {
 >ng g c components/layout/Header
 
 add a dummy statuc component which not having any functionalities just a title
-
