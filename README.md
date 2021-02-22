@@ -376,3 +376,27 @@ deleteToDo(todo: TODO) {
 >ng g c components/layout/Header
 
 add a dummy statuc component which not having any functionalities just a title
+
+
+routing:
+in app-routing.module.ts
+```
+import { TodosComponent } from './components/todos/todos.component';
+import { AboutComponent } from './components/paegs/about/about.component'
+
+const routes: Routes = [
+  {path:'', component:TodosComponent},
+  {path:'about', component:AboutComponent}
+  
+];
+```
+app.component.html
+```
+<router-outlet></router-outlet>
+```
+header.component.html
+```
+        <nav> 
+          <a routerLink ="/">Home</a>|<a routerLink="/about">About</a> 
+        </nav>
+```
