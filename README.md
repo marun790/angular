@@ -5,13 +5,13 @@ in angular we have architecture like modules and components
 group of components are called as mogules -  basically the logical grouping of components are modules
 
 Binding	Example
-Property Binding	<input [placeholder]="placeholderValue" />
-String Interpolation	<input placeholder="{{placeholderValue}}" />
-Attribute Binding	<td [attr.colspan]="clspn">
-Style Binding	<input [style.borderStyle]="'dashed'" />
-Class Binding	<input [class.active]="true" />
-Event Binding	<input (keyup.enter)="onEnter()" />
-Two-way Binding	<input [(ngModel)]="value" />
+Property Binding |	<input [placeholder]="placeholderValue" />
+String Interpolation |	<input placeholder="{{placeholderValue}}" />
+Attribute Binding	| <td [attr.colspan]="clspn">
+Style Binding	 | <input [style.borderStyle]="'dashed'" />
+Class Binding	| <input [class.active]="true" />
+Event Binding |	<input (keyup.enter)="onEnter()" />
+Two-way Binding	| <input [(ngModel)]="value" />
 
 ```
 <app-todo-item 
@@ -31,7 +31,7 @@ install node
 
 
 Angular we have 
-Modules - which holds all components
+Modules - which holds all components -> componet + router module
 Coponents - which have combinations of style, html, controller
 Service - will provide service for the component
 
@@ -340,7 +340,7 @@ const headerOptions = {
     return this.http.put(url, todo, headerOptions);
   }
 ```
-implement HTTP://DELETE
+implement HTTP://DELETE via event emmiter
 delete is littlebit tricky, we have to emmit an action from child to parrent and have to receive and do the action in parent
 
 todo-item.component.ts
